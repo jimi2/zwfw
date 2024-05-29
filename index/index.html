@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文化许可证查询</title>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    <script type="text/javascript" src="./static/jquery.min.js"></script>
+    <style>
+        .gameDiv h5 {
+            margin-left: 150px;
+        }
+    </style>
+    <script type="text/javascript">
+        function MM_preloadImages() { //v3.0
+            var d = document;
+            if (d.images) {
+                if (!d.MM_p) d.MM_p = new Array();
+                var i, j = d.MM_p.length, a = MM_preloadImages.arguments;
+                for (i = 0; i < a.length; i++)
+                    if (a[i].indexOf("#") != 0) {
+                        d.MM_p[j] = new Image;
+                        d.MM_p[j++].src = a[i];
+                    }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="header">
+    
+    <div class="logo"></div>
+    
+</div>
+<div id="mod1" class="center" style="height:1000px;">
+    <div class="list">
+        <h1>烟台球小牛体育文化有限公司
+        </h1>
+    </div>
+    
+    <div class="list1">
+        <h2>编号</h2>
+        <h3>370601-TQ-025
+        </h3>
+    </div>
+
+    <div class="list1">
+        <h2>名称</h2>
+        <h3>烟台球小牛体育文化有限公司
+        </h3>
+    </div>
+    <div class="list1">
+        
+        <h2>住所</h2>
+        
+        <h3>山东省烟台市芝罘区毓璜顶街道南大街213号2510、2511、2512室 
+        </h3>
+    </div>
+    
+    <div class="list1">
+        <h2>主要负责人</h2>
+        <h3>邹安&nbsp;</h3>
+    </div>
+    <div class="list1">
+        <h2>类型</h2>
+        <h3>有限责任公司
+        </h3>
+    </div>
+    
+    
+    <div class="list1">
+        <h2>单位类别</h2>
+        <h3>娱乐场所
+        </h3>
+    </div>
+    <div class="list1">
+        <h2>注册资本</h2>
+        <h3>人民币 100 万
+        </h3>
+    </div>
+    
+
+    
+    <div class="list1">
+        
+        <h2>使用面积</h2>
+        
+        <h3>185平方米</h3>
+    </div>
+    
+
+    
+    <div class="list1">
+        <h2>核定人数</h2>
+        <h3>2
+        </h3>
+    </div>
+    
+    
+
+
+    <div class="list1">
+        <h2>首次发证日期</h2>
+        <h3>2022-06-08
+        </h3>
+    </div>
+    
+    <div class="list1">
+        <h2>有效期</h2>
+        <h3>2022-06-08 至 2026-06-07
+        </h3>
+    </div>
+    
+    <div class="list1">
+        <h2>经营范围</h2>
+        <h3>娱乐场所
+        </h3>
+    </div>
+    <div class="list1">
+        <h2>发证机关</h2>
+        <h3>芝罘区行政审批服务局
+        </h3>
+    </div>
+    <div class="list1">
+        <h2>发证日期</h2>
+        <h3>2022-06-03
+        </h3>
+    </div>
+    
+</div>
+
+<div id="mod2" class="center" style="height:1000px;display:none">
+    
+    <br/><h4>无</h4>
+    
+</div>
+
+<div id="mod3" class="center" style="height:1000px;display:none">
+    
+    <br/><h4>无</h4>
+    
+</div>
+
+<div id="mod4" class="center" style="height:1000px;display:none">
+    
+    <br/><h4>无</h4>
+    
+</div>
+
+<div id="mod5" class="center" style="height:1000px;display:none">
+    
+    <br/><h4>无</h4>
+    
+
+</div>
+
+<div id="mod6" class="center" style="height:1000px;display:none">
+    
+    <br/><h4>无</h4>
+    
+
+</div>
+
+<div id="mod7" class="center" style="height:1000px;display:none">
+       
+查询失败！ <br/>
+
+<script type="text/javascript">
+console.log(11)
+    $(function () {
+        autoSizeHeight();
+        window.onresize = function () {  //拖动浏览器窗口导航也适应
+            autoSizeHeight();
+        }
+    })
+
+    //固定导航
+    function autoSizeHeight() {
+        var footerH = 0;
+        var winH = $(window).height();
+        footerH = $(".footer").outerHeight(true);
+        //滚动区域
+        if ($(".center").length != 0) {
+            var headerH = $(".center").position().top;
+            $(".center").height(winH - footerH - headerH);
+        }
+    }
+
+    function setTab(tag) {
+        for (var i = 1; i <= 7; i++) {
+            var mod = document.getElementById("mod" + i);
+            mod.style.display = "none";
+        }
+        document.getElementById("mod" + tag).style.display = "block";
+    }
+
+    function alertMessage() {
+        alert("该设备审批单位未提供公示地址！");
+    }
+    if(document.getElementById("business_id").value=="02102"){
+        setTab(7);
+    }
+
+    //alert(navigator.userAgent);
+    //alert("高:"+$(window).height()+"宽:"+$(window).width());
+</script>
+</body>
+</html>
